@@ -1,1 +1,47 @@
 @import 'modules/colors';
+
+
+header{
+    background-image: url('../img/background_temida.jpg');//wstawić rysunek o mniejszej rozdzielczości
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+    
+    @media (min-width: 400px){
+       height: 100vh; 
+       background-image: url('../img/background_temida.jpg');
+    } 
+    span{
+        font-size: 4rem;
+    }
+}
+
+nav {
+    ul{
+        float: right;
+    }
+    li{
+        display: inline-block;
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    a{
+        text-decoration: none;
+        color: $main-color;
+        &:hover{
+            color: $base-color;
+          
+        }
+    }
+}
+
+.top{
+    background-color: $background-color;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 2rem;
+    height: 3rem;
+}

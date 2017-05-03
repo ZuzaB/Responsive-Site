@@ -1,1 +1,54 @@
 @import 'modules/colors';
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    background-color: $background-color;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.row {
+  &::after, &::before {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+$columnsCount: 6;
+
+@for $i from 1 through $columnsCount {
+  .col-#{$i} {
+    width: (100%/$columnsCount)*$i;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  border: 1px solid red;
+  padding: 10px;
+
+  @media (max-width: 400px) {//ustawić
+    float: none;
+    width: 100%;
+  }
+}
+
+section {
+    height: 100vh;
+}
+
+#second, #fourth{
+    background-color: $main-color;
+    color: $background-color;
+}
