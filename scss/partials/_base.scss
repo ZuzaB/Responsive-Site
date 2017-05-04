@@ -1,4 +1,4 @@
-@import 'modules/colors';
+@import 'modules/all';
 * {
   box-sizing: border-box;
 }
@@ -7,7 +7,6 @@ html {
     font-size: 15px;
     background-color: $background-color;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .container {
@@ -38,14 +37,14 @@ $columnsCount: 6;
   border: 1px solid red;
   padding: 10px;
 
-  @media (max-width: 400px) {//ustawić
+  @media (max-width: #{$firstBreakpoint-width}) {//ustawić
     float: none;
     width: 100%;
   }
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #second, #fourth{

@@ -1,0 +1,14 @@
+$firstBreakpoint-width: 400px;
+$secondBreakpoint-width: 600px;
+
+@mixin firstBreakpoint {
+    @media (min-width: #{$firstBreakpoint-width}) {
+        @content;
+    }
+}
+
+@mixin secondBreakpoint {
+    @media (min-width: #{$secondBreakpoint-width}) {
+        @content;
+    }
+}
