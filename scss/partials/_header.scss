@@ -10,8 +10,13 @@ header{
        background-image: url('../img/background_temida.jpg');
     } 
     span{
-        font-size: 4rem;
+//        font-size: 4rem;
     }
+}
+
+.top{
+    background-color: $background-color;
+    color: $main-color;
 }
 
 nav {
@@ -20,8 +25,8 @@ nav {
     }
     li{
         display: inline-block;
-        padding: 0 2rem;
-        font-size: 1.2rem;
+//        padding: 0 2rem;
+//        font-size: 1.2rem;
         font-weight: 600;
     }
     a{
@@ -29,17 +34,19 @@ nav {
         color: $main-color;
         &:hover{
             color: $base-color;
-          
         }
     }
 }
 
-.top{
-    background-color: $background-color;
-}
-
 .logo{
-    border-radius: 50%;
-    width: 2rem;
-    height: 3rem;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    &:after{
+        content: '';
+        border: 1px solid $accent-color;
+        display: block;
+        width: 31px;
+        margin: 0 auto;
+    }
+//    font-size: 4rem;
 }
