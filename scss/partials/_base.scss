@@ -34,13 +34,20 @@ $columnsCount: 6;
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  border: 1px solid red;
+//  border: 1px solid red;
   padding: 10px;
 
-  @media (max-width: #{$firstBreakpoint-width}) {//ustawić
+  @media (max-width: #{$firstBreakpoint-width}) {
     float: none;
     width: 100%;
   }
+}
+
+.img{
+    border: 1px solid red;
+    height: 400px;
+    width: 250px;
+    float: right;
 }
 
 section {
@@ -50,4 +57,12 @@ section {
 #second, #fourth{
     background-color: $main-color;
     color: $background-color;
+}
+
+#third{
+    color: $main-color;
+}
+
+h1{
+    text-align: center;
 }

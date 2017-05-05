@@ -1,7 +1,7 @@
 @import 'modules/all';
 
 header{
-    background-image: url('../img/background_temida.jpg');//wstawić rysunek o mniejszej rozdzielczości
+    background-image: url('../img/background-court-building.jpg');//wstawić rysunek o mniejszej rozdzielczości
     background-size: cover;
        min-height: 100vh; 
     background-repeat: no-repeat;
@@ -10,24 +10,30 @@ header{
        background-image: url('../img/background_temida.jpg');
     } 
     span{
-//        font-size: 4rem;
+        display: block;
+        margin-top: 5rem;
     }
 }
 
 .top{
     background-color: $background-color;
     color: $main-color;
+    width: 100%;
+    position: fixed;
 }
 
 nav {
+    
     ul{
-        float: right;
+        text-align: center;
     }
     li{
         display: inline-block;
-//        padding: 0 2rem;
-//        font-size: 1.2rem;
+        padding: 0 1.5vw;
         font-weight: 600;
+        @include thirdBreakpoint{
+          font-size: 1.5rem;
+        }
     }
     a{
         text-decoration: none;
@@ -41,6 +47,7 @@ nav {
 .logo{
     font-family: 'Tangerine', cursive;
     text-align: center;
+    font-size: 42px;
     &:after{
         content: '';
         border: 1px solid $accent-color;
@@ -48,5 +55,4 @@ nav {
         width: 31px;
         margin: 0 auto;
     }
-//    font-size: 4rem;
 }
