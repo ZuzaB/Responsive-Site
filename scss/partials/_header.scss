@@ -31,9 +31,9 @@ nav {
         display: inline-block;
         padding: 0 1.5vw;
         font-weight: 600;
-        @include thirdBreakpoint{
-          font-size: 1.5rem;
-        }
+//        @include thirdBreakpoint{
+//          font-size: 1.5rem;
+//        }
     }
     a{
         text-decoration: none;
@@ -47,7 +47,7 @@ nav {
 .logo{
     font-family: 'Tangerine', cursive;
     text-align: center;
-    font-size: 42px;
+    font-size: 2em;
     &:after{
         content: '';
         border: 1px solid $accent-color;

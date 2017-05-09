@@ -7,6 +7,12 @@ body {
     font-size: 3vw;
     background-color: $background-color;
     font-family: 'Open Sans', 'Verdana', sans-serif;
+        @include firstBreakpoint{
+          font-size: 2vw;
+        }
+        @include thirdBreakpoint{
+          font-size: 1.5vw;
+        }
 }
 
 .container {
@@ -65,4 +71,11 @@ section {
 
 h1{
     text-align: center;
+    &:after{
+        content: '';
+        border: 1px solid $accent-color;
+        display: block;
+        width: 31px;
+        margin: 0 auto;
+    }
 }
