@@ -1,4 +1,7 @@
 @import 'modules/all';
 footer{
     background-color: $base-color;
+    a{
+        text-decoration: none;
+    }
 }

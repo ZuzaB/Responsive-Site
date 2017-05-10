@@ -1,7 +1,7 @@
 $firstBreakpoint-width: 540px;
 $secondBreakpoint-width: 600px;
 $thirdBreakpoint-width: 840px;
-$fourthBreakpoint-width: 1000px;
+$fourthBreakpoint-width: 1400px;
 
 @mixin firstBreakpoint {
     @media (min-width: #{$firstBreakpoint-width}) {

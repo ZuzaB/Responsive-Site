@@ -1,55 +1,54 @@
-@import 'modules/all';
+    @import 'modules/all';
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     font-size: 3vw;
     background-color: $background-color;
     font-family: 'Open Sans', 'Verdana', sans-serif;
-        @include firstBreakpoint{
-          font-size: 2vw;
-        }
-        @include thirdBreakpoint{
-          font-size: 1.5vw;
-        }
+    @include firstBreakpoint {
+        font-size: 2vw;
+    }
+    @include thirdBreakpoint {
+        font-size: 1.5vw;
+    }
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .row {
-  &::after, &::before {
-    display: table;
-    content: '';
-    clear: both;
-  }
+    &::after,
+    &::before {
+        display: table;
+        content: '';
+        clear: both;
+    }
 }
 
 $columnsCount: 6;
-
 @for $i from 1 through $columnsCount {
-  .col-#{$i} {
-    width: (100%/$columnsCount)*$i;
-  }
+    .col-#{$i} {
+        width: (100%/$columnsCount)*$i;
+    }
 }
 
 [class*='col-'] {
-  float: left;
-  min-height: 1px;
-//  border: 1px solid red;
-  padding: 10px;
-
-  @media (max-width: #{$firstBreakpoint-width}) {
-    float: none;
-    width: 100%;
-  }
+    float: left;
+    min-height: 1px;
+    //  border: 1px solid red;
+    padding: 10px;
+    @media (max-width: #{$firstBreakpoint-width}) {
+        float: none;
+        width: 100%;
+    }
 }
 
-.img{
+.img {
     border: 1px solid red;
     height: 400px;
     width: 250px;
@@ -60,22 +59,35 @@ section {
     min-height: 100vh;
 }
 
-#second, #fourth{
+#second,
+#fourth {
     background-color: $main-color;
     color: $background-color;
 }
 
-#third{
+#third {
     color: $main-color;
 }
 
-h1{
+h1 {
     text-align: center;
-    &:after{
+    font-size: 1.3em;
+    padding: 1em 0;
+    &:after {
         content: '';
         border: 1px solid $accent-color;
         display: block;
-        width: 31px;
+        width: 8%;
         margin: 0 auto;
+    }
+}
+
+h2 {
+    font-size: 1.1em;//poprawić jak będzię ostateczna treść
+    &:after {
+        content: '';
+        border: 1px solid $accent-color;
+        display: block;
+        width: 50%;
     }
 }

@@ -18,22 +18,35 @@ header{
 .top{
     background-color: $background-color;
     color: $main-color;
-    width: 100%;
-    position: fixed;
+    -webkit-box-shadow: 0 8px 6px -6px $main-color;
+    -moz-box-shadow: 0 8px 6px -6px $main-color;
+    box-shadow: 0 8px 6px -6px $main-color;
+    @include firstBreakpoint{
+        width: 100%;
+        position: fixed;
+    }
+
 }
 
 nav {
-    
+    background-color: $background-color;//poprawić pozycje
+    position: fixed;
+        @include firstBreakpoint{
+        position: static;
+    }
     ul{
         text-align: center;
     }
     li{
         display: inline-block;
-        padding: 0 1.5vw;
+        padding: 0.5em 1em;
         font-weight: 600;
-//        @include thirdBreakpoint{
-//          font-size: 1.5rem;
-//        }
+        @include firstBreakpoint{
+             font-size: 1.3em; 
+        }
+        @include fourthBreakpoint{
+            padding-right: 0;
+        }
     }
     a{
         text-decoration: none;
