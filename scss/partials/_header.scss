@@ -11,7 +11,9 @@ header{
     } 
     span{
         display: block;
-        margin-top: 5rem;
+        margin-top: 30%;//ustawić przy docelowym tle
+        font-size: 2em;
+        font-style: italic;
     }
 }
 
@@ -55,6 +57,10 @@ nav {
             color: $base-color;
         }
     }
+}
+
+.active{
+    color: $accent-color;
 }
 
 .logo{
