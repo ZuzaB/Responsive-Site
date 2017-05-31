@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){ 
+$(function(){ 
     var nav = document.querySelector('nav');
     var lisMenue = nav.querySelectorAll('a');
     console.log(lisMenue);

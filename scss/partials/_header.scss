@@ -31,11 +31,7 @@ header{
 }
 
 nav {
-    background-color: $background-color;//poprawić pozycje
-    position: fixed;
-        @include firstBreakpoint{
-        position: static;
-    }
+    background-color: $background-color;
     ul{
         text-align: center;
     }

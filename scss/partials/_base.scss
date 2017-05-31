@@ -53,6 +53,10 @@ $columnsCount: 6;
     height: 400px;
     width: 250px;
     float: right;
+    display: none;
+    @include firstBreakpoint {
+        display: static;
+    }
 }
 
 section {
@@ -90,4 +94,18 @@ h2 {
         display: block;
         width: 50%;
     }
+}
+
+.map{
+    height: 450px;
+  iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+    }
+}
+
+.hidden{
+    display: none;
 }
