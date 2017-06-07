@@ -19,7 +19,7 @@ header{
 }
 
 .top{
-    background-color: $background-color;
+    background-color: $contrast-color;
     color: $main-color;
     -webkit-box-shadow: 0 8px 6px -6px $main-color;
     -moz-box-shadow: 0 8px 6px -6px $main-color;
@@ -31,7 +31,7 @@ header{
 }
 
 nav {
-    background-color: $background-color;
+    background-color: $contrast-color;
     &.mobile-menu{
         -webkit-box-shadow: 0 8px 6px -6px $main-color;
         -moz-box-shadow: 0 8px 6px -6px $main-color;

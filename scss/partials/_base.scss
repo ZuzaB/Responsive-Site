@@ -5,7 +5,7 @@
 
 body {
     font-size: 3vw;
-    background-color: $background-color;
+    background-color: $contrast-color;
     font-family: 'Open Sans', 'Verdana', sans-serif;
     @include firstBreakpoint {
         font-size: 2vw;
@@ -61,7 +61,7 @@ section{
 #second,
 #fourth {
     background-color: $main-color;
-    color: $background-color;
+    color: $contrast-color;
 }
 
 #third {
