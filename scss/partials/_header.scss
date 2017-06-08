@@ -49,9 +49,9 @@ nav {
         @include firstBreakpoint{
              font-size: 1.3em; 
         }
-        @include fourthBreakpoint{
-            padding-right: 0;
-        }
+//        @include fourthBreakpoint{
+//            padding-right: 0;
+//        }
     }
     a{
         text-decoration: none;
