@@ -56,7 +56,7 @@ section{
         min-height: 100vh;
     }
     @include fourthBreakpoint{
-        height: 670px;
+        min-height: 670px;
     }
 }
 
