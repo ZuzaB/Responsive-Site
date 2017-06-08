@@ -12,11 +12,12 @@ $(function(){
     }
     
     var topElement = document.querySelector('.top');
-    var topElement_height = getComputedStyle(topElement).height.split('px')[0];
-    var nav_height = getComputedStyle(nav).height.split('px')[0];
     var mobile = window.matchMedia("screen and (max-width: 540px)");
         
      function stickyScroll(e){
+        var topElement_height = getComputedStyle(topElement).height.split('px')[0];
+        var nav_height = getComputedStyle(nav).height.split('px')[0];
+         
         if( window.pageYOffset > (topElement_height - nav_height) / 2 && mobile.matches) {
             nav.classList.add('mobile-menu');
         }
