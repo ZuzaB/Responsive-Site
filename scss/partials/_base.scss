@@ -52,6 +52,10 @@ $columnsCount: 6;
 }
 
 section{
+    p{
+      line-height: normal;
+      padding-bottom: 15px;
+    }
     @include thirdBreakpoint{
         min-height: 100vh;
     }

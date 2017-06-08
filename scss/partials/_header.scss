@@ -3,15 +3,15 @@
 header{
     background-image: url('../img/background-court-building.jpg');//wstawić rysunek o mniejszej rozdzielczości
     background-size: cover;
-       min-height: 100vh; 
+    min-height: 100vh; 
     background-repeat: no-repeat;
     
     @include firstBreakpoint{
-       background-image: url('../img/background_temida.jpg');
+       background-image: url('../img/background_temida.jpg');//zmienić na zdjęcie docelowe
     } 
     span{
         display: block;
-        margin-top: 30%;//ustawić przy docelowym tle
+        margin-top: 50vh;//ustawić przy docelowym tle
         font-size: 2em;
         font-style: italic;
         color: #000;
