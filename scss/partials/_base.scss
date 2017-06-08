@@ -13,6 +13,9 @@ body {
     @include thirdBreakpoint {
         font-size: 1.5vw;
     }
+    @include fourthBreakpoint{
+        font-size: 20px;
+    }
 }
 
 .container {

@@ -27,7 +27,7 @@ $(function(){
         }   
     }
     window.addEventListener('scroll', stickyScroll);
-    mobile.addListener(function(mobile){//może wprowadzić zmiany?
+    mobile.addListener(function(mobile){
          if(mobile.matches){ 
              window.addEventListener('scroll', stickyScroll);
         }else{
