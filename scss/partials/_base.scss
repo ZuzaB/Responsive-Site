@@ -52,9 +52,10 @@ $columnsCount: 6;
 }
 
 section{
+    line-height: normal;
+    
     p{
       text-align: justify;
-      line-height: normal;
       padding-bottom: 15px;
     }
     @include thirdBreakpoint{
@@ -62,6 +63,10 @@ section{
     }
     @include fourthBreakpoint{
         min-height: 670px;
+    }
+    ul{
+        list-style: disc;
+        padding-left: 30px;
     }
 }
 
