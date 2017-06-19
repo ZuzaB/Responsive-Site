@@ -67,6 +67,9 @@ section{
     ul{
         list-style: disc;
         padding-left: 30px;
+        @include thirdBreakpoint {
+            font-size: 16px;
+        }
     }
 }
 
@@ -110,7 +113,10 @@ h1 {
 }
 
 h2 {
-    font-size: 1.1em;//poprawić 
+    font-size: 1.1em;
+    @include thirdBreakpoint {
+        font-size: 20px;
+    } 
     &:after {
         content: '';
         border: 1px solid $accent-color;
