@@ -49,6 +49,9 @@ nav {
         @include firstBreakpoint{
              font-size: 1.3em; 
         }
+        @media (min-width:920px){
+            font-size: 25px;
+        }
     }
     a{
         text-decoration: none;
