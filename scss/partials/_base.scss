@@ -53,6 +53,7 @@ $columnsCount: 6;
 
 section{
     p{
+      text-align: justify;
       line-height: normal;
       padding-bottom: 15px;
     }
@@ -95,7 +96,7 @@ h1 {
     border: 1px solid red;
     height: 300px;
     width: 250px;
-    float: right;
+    float: left;
     display: none;
     margin: 10px;
     @include firstBreakpoint {
@@ -113,8 +114,11 @@ h2 {
     }
 }
 
-.contact span{
-    line-height: 40px;
+.contact{
+    text-align: center;//media?
+    span{
+      line-height: 40px;
+    }
 }
 
 .map{
