@@ -102,8 +102,8 @@ h1 {
 }
 
 .img {
-    border: 1px solid red;
-    height: 300px;
+    border: 1px solid $accent-color;
+    height: 260px;
     width: 250px;
     float: left;
     display: none;
@@ -126,7 +126,7 @@ h2 {
         width: 50%;
     }
 }
-.ico{
+.ico{//zrobić mobile
     height: 40px;
     width: 40px;
     border-radius: 50%;
