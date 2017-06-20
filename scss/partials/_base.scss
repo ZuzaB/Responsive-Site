@@ -67,7 +67,6 @@ section{
     ul{
         list-style: disc;
         padding-left: 35px;
-        min-height: 200px;
         @include thirdBreakpoint {
             font-size: 16px;
         }
@@ -136,6 +135,7 @@ h2 {
     span{
         color: #E8EDDF;
         line-height: 40px;
+        font-size: 20px;
     }
 }
 .contact{

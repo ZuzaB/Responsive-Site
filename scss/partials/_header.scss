@@ -1,7 +1,7 @@
 @import 'modules/all';
 
 header{
-    background-image: url('../img/background-court-building.jpg');//wstawić rysunek o mniejszej rozdzielczości
+    background-image: url('../img/background-court-building.jpg');//wstawić rysunek o mniejszej wadze
     background-size: cover;
     min-height: 100vh; 
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ header{
         margin-top: 50vh;//ustawić przy docelowym tle
         font-size: 2em;
         font-style: italic;
-        color: #000;
+        color: $main-color;
     }
 }
 
