@@ -11,9 +11,13 @@ header{
     } 
     span{
         display: block;
+        width: 100%;
+        text-align: center;
         margin-top: 50vh;//ustawić przy docelowym tle
         font-size: 2em;
+        text-shadow: -1px 1px 0px rgba(232, 237, 223, 1);
         font-style: italic;
+        font-weight: 700;
         color: $main-color;
     }
 }

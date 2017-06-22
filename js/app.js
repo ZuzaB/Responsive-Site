@@ -10,7 +10,7 @@ $(function(){
             this.classList.add('active');   
         });
     }
-    
+
     var topElement = document.querySelector('.top');
     var mobile = window.matchMedia("screen and (max-width: 540px)");
         
