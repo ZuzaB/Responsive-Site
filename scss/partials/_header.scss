@@ -1,13 +1,14 @@
 @import 'modules/all';
 
 header{
-    background-image: url('../img/background-court-building.jpg');//wstawić rysunek o mniejszej wadze
+    background-image: url('../img/background_temida.jpg');//wstawić rysunek o mniejszej wadze
     background-size: cover;
     min-height: 100vh; 
     background-repeat: no-repeat;
+    background-position: left;
     
     @include firstBreakpoint{
-       background-image: url('../img/background_temida.jpg');//zmienić na zdjęcie docelowe
+       background-image: url('../img/marble-columns-1214427-1598x1184.jpg');//czy zostanie to zdjęcie?
     } 
     span{
         display: block;
@@ -49,7 +50,6 @@ nav {
     li{
         display: inline-block;
         padding: 0.5em 1em;
-        font-weight: 600;
         @include firstBreakpoint{
              font-size: 1.3em; 
         }
@@ -59,6 +59,7 @@ nav {
     }
     a{
         text-decoration: none;
+        text-transform: uppercase;
         color: $main-color;
         &:hover{
             color: $base-color;
