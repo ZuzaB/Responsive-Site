@@ -43,7 +43,6 @@ $columnsCount: 6;
 [class*='col-'] {
     float: left;
     min-height: 1px;
-    //  border: 1px solid red;
     padding: 10px;
     @media (max-width: #{$firstBreakpoint-width}) {
         float: none;
@@ -56,7 +55,10 @@ section{
     
     p{
       text-align: justify;
-      padding: 0 63px 15px 63px;
+        padding: 0 20px 15px 20px;
+      @include thirdBreakpoint{
+        padding: 0 63px 15px 63px;
+      }
     }
     @include thirdBreakpoint{
         min-height: 100vh;
@@ -87,7 +89,7 @@ section{
     color: $main-color;
 }
 
-h1 {
+h2 {
     text-align: center;
     font-size: 1.3em;
     padding: 1em 0;
@@ -105,7 +107,7 @@ h1 {
     height: 260px;
     width: 250px;
     float: left;
-    display: none;
+    display: none;//dodać jak będzie gotowe
     margin: 10px;
     @include firstBreakpoint {
         display: inline-block;
@@ -113,11 +115,13 @@ h1 {
     }
 }
 
-h2 {
+h3 {
     font-size: 1.1em;
     padding: 10px 0 10px 46px;
+    min-height: 40px;
     @include thirdBreakpoint {
         font-size: 20px;
+        height: auto;
     } 
     &:after {
         content: '';
@@ -126,7 +130,7 @@ h2 {
         width: 50%;
     }
 }
-.ico{//zrobić mobile
+.ico{
     height: 40px;
     width: 40px;
     border-radius: 50%;
