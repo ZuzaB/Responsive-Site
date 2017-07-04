@@ -10,16 +10,17 @@ header{
     @include firstBreakpoint{
        background-image: url('../img/marble-columns-1214427-1598x1184.jpg');//czy zostanie to zdjęcie?
     } 
+
     h1{
         display: block;
         width: 100%;
         text-align: center;
-        margin-top: 50vh;//ustawić przy docelowym tle
         font-size: 2em;
-        text-shadow: -1px 1px 0px rgba(232, 237, 223, 1);
-        font-style: italic;
+//      text-shadow: -1px 1px 0px rgba(232, 237, 223, 1);
+//        font-style: italic;
         font-weight: 700;
-        color: $main-color;
+        color: #0b1d33;
+        line-height: 1.5em;
     }
 }
 
@@ -81,5 +82,16 @@ nav {
         display: block;
         width: 31px;
         margin: 0 auto;
+    }
+}
+
+.big{
+    margin: 0 auto;
+    margin-top: 25%;
+    color: #0b1d33;
+    font-size: 5em;
+    margin-bottom: 35px;
+    &:after{
+        width: 1em;
     }
 }
