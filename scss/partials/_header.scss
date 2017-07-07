@@ -19,7 +19,7 @@ header{
         font-weight: 700;
         color: #0b1d33;
         line-height: 1.5em;
-        color: $main-color;
+        text-shadow: $contrast-color 1px 1px 25px;
     }
 }
 
@@ -90,6 +90,7 @@ nav {
     color: #0b1d33;
     font-size: 5em;
     margin-bottom: 35px;
+    text-shadow: $contrast-color 1px 1px 40px;
     &:after{
         width: 1em;
     }
