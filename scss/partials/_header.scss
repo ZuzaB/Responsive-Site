@@ -1,14 +1,15 @@
 @import 'modules/all';
 
 header{
-    background-image: url('../img/background_temida.jpg');//wstawić rysunek o mniejszej wadze
+    background-image: url('../img/marble-columns-1214427-1598x1184-mobile.jpg');
     background-size: cover;
     min-height: 100vh; 
     background-repeat: no-repeat;
-    background-position: left;
     
-    @include firstBreakpoint{
-       background-image: url('../img/marble-columns-1214427-1598x1184.jpg');//czy zostanie to zdjęcie?
+    
+    @include thirdBreakpoint{
+       background-image: url('../img/marble-columns-1214427-1598x1184.jpg');
+        background-position: left;
     } 
 
     h1{
