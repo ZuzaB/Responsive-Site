@@ -62,8 +62,10 @@ nav {
         text-decoration: none;
         text-transform: uppercase;
         color: $main-color;
-        &:hover{
-            color: $base-color;
+        @include thirdBreakpoint{
+            &:hover{
+                color: $base-color;
+            }
         }
     }
 }
