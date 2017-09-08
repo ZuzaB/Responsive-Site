@@ -1,16 +1,4 @@
 $(function(){
-    var nav = document.querySelector('nav');
-    var lisMenue = nav.querySelectorAll('a');
-
-    for(var i=0; i < lisMenue.length; i++){
-        lisMenue[i].addEventListener('click', function(e){
-            for(var i=0; i < lisMenue.length; i++){
-              lisMenue[i].classList.remove('active');
-            }
-            this.classList.add('active');
-        });
-    }
-
     var topElement = document.querySelector('.top');
     var mobile = window.matchMedia("screen and (max-width: 540px)");
 
