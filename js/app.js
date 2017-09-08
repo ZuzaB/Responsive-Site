@@ -1,4 +1,5 @@
 $(function(){
+    var nav = document.querySelector('nav');
     var topElement = document.querySelector('.top');
     var mobile = window.matchMedia("screen and (max-width: 540px)");
 
