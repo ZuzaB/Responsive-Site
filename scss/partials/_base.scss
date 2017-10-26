@@ -52,7 +52,8 @@ $columnsCount: 6;
 
 section{
     line-height: normal;
-    
+    padding-top: 4em;
+
     p{
       text-align: justify;
         padding: 0 20px 15px 20px;
@@ -122,7 +123,7 @@ h3 {
     @include thirdBreakpoint {
         font-size: 20px;
         height: auto;
-    } 
+    }
     &:after {
         content: '';
         border: 1px solid $accent-color;

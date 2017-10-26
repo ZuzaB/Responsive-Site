@@ -26,9 +26,11 @@ $(function(){
     });
 
     var $sections = $('.section'),
-        $menu = $('div.top'),
+        $top = $('div.top'),
+        $menu = $top.find('nav'),
         menu_height = $menu.outerHeight();
-
+console.log($top, $menu);
+console.log($menu.find('a'));
     $(window).on('scroll', function () {
       var cur_pos = $(this).scrollTop();
 

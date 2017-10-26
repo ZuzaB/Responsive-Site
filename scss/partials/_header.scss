@@ -3,14 +3,14 @@
 header{
     background-image: url('../img/marble-columns-1214427-1598x1184-mobile.jpg');
     background-size: cover;
-    min-height: 100vh; 
+    min-height: 100vh;
     background-repeat: no-repeat;
-    
-    
+    background-attachment: fixed;
+
     @include thirdBreakpoint{
        background-image: url('../img/marble-columns-1214427-1598x1184.jpg');
         background-position: left;
-    } 
+    }
 
     h1{
         display: block;
@@ -30,9 +30,13 @@ header{
     -webkit-box-shadow: 0 8px 6px -6px $main-color;
     -moz-box-shadow: 0 8px 6px -6px $main-color;
     box-shadow: 0 8px 6px -6px $main-color;
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+    }
     @include firstBreakpoint{
         width: 100%;
-        position: fixed;  
+        position: fixed;
     }
 }
 
@@ -43,7 +47,7 @@ nav {
         -moz-box-shadow: 0 8px 6px -6px $main-color;
         box-shadow: 0 8px 6px -6px $main-color;
         top:0;
-        position: fixed; 
+        position: fixed;
     }
     ul{
         text-align: center;
@@ -52,15 +56,13 @@ nav {
         display: inline-block;
         padding: 0.5em 1em;
         @include firstBreakpoint{
-             font-size: 1.3em; 
+             font-size: 1.3em;
         }
         @media (min-width:920px){
             font-size: 25px;
         }
     }
     a{
-        text-decoration: none;
-        text-transform: uppercase;
         color: $main-color;
         @include thirdBreakpoint{
             &:hover{
@@ -78,6 +80,9 @@ nav {
     font-family: 'Tangerine', cursive;
     text-align: center;
     font-size: 2em;
+    a{
+      color: $main-color;
+    }
     &:after{
         content: '';
         border: 1px solid $accent-color;
@@ -87,7 +92,7 @@ nav {
     }
 }
 
-.big{
+.big-logo{
     margin: 0 auto;
     margin-top: 25%;
     color: #0b1d33;
