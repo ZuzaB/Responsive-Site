@@ -1,11 +1,12 @@
+'use strict';
 $(function(){
-    var nav = document.querySelector('nav');
-    var topElement = document.querySelector('.top');
-    var mobile = window.matchMedia("screen and (max-width: 540px)");
+    var nav = document.querySelector('nav'),
+        topElement = document.querySelector('.top'),
+        mobile = window.matchMedia("screen and (max-width: 540px)");
 
      function stickyScroll(e){
-        var topElement_height = getComputedStyle(topElement).height.split('px')[0];
-        var nav_height = getComputedStyle(nav).height.split('px')[0];
+        var topElement_height = getComputedStyle(topElement).height.split('px')[0],
+            nav_height = getComputedStyle(nav).height.split('px')[0];
 
         if( window.pageYOffset > (topElement_height - nav_height) / 2 && mobile.matches) {
             nav.classList.add('mobile-menu');
@@ -24,16 +25,16 @@ $(function(){
         }
     });
 
-    var $sections = $('.section');
-    var $menu = $('div.top');
-    var menu_height = $menu.outerHeight();
+    var $sections = $('.section'),
+        $menu = $('div.top'),
+        menu_height = $menu.outerHeight();
 
     $(window).on('scroll', function () {
       var cur_pos = $(this).scrollTop();
 
       $sections.each(function() {
-        var top = $(this).offset().top - menu_height;
-        var bottom = top + $(this).outerHeight();
+        var top = $(this).offset().top - menu_height,
+            bottom = top + $(this).outerHeight();
 
         if (cur_pos >= top && cur_pos <= bottom) {
             $menu.find('a').removeClass('active');
