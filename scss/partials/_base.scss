@@ -1,0 +1,166 @@
+    @import 'modules/all';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 3vw;
+    background-color: $contrast-color;
+    font-family: 'Open Sans', 'Verdana', sans-serif;
+    @include firstBreakpoint {
+        font-size: 2vw;
+    }
+    @include thirdBreakpoint {
+        font-size: 1.5vw;
+    }
+    @include fourthBreakpoint{
+        font-size: 20px;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.row {
+    &::after,
+    &::before {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
+
+$columnsCount: 6;
+@for $i from 1 through $columnsCount {
+    .col-#{$i} {
+        width: (100%/$columnsCount)*$i;
+    }
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    @media (max-width: #{$firstBreakpoint-width}) {
+        float: none;
+        width: 100%;
+    }
+}
+
+section{
+    line-height: normal;
+    
+    p{
+      text-align: justify;
+        padding: 0 20px 15px 20px;
+      @include thirdBreakpoint{
+        padding: 0 63px 15px 63px;
+      }
+    }
+    @include thirdBreakpoint{
+        min-height: 100vh;
+    }
+    @include fourthBreakpoint{
+        min-height: 670px;
+    }
+    ul{
+        list-style: disc;
+        padding-left: 35px;
+        @include thirdBreakpoint {
+            font-size: 16px;
+        }
+    }
+}
+
+#first {
+    min-height: 100vh;
+}
+
+#second,
+#fourth {
+    background-color: $main-color;
+    color: $contrast-color;
+}
+
+#third {
+    color: $main-color;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em 0;
+    &:after {
+        content: '';
+        border: 1px solid $accent-color;
+        display: block;
+        width: 8%;
+        margin: 0 auto;
+    }
+}
+
+.img {
+    border: 1px solid $accent-color;
+    height: 260px;
+    width: 250px;
+    float: left;
+    display: none;//dodać jak będzie gotowe
+    margin: 10px;
+    @include firstBreakpoint {
+        display: inline-block;
+         display: none;
+    }
+}
+
+h3 {
+    font-size: 1.1em;
+    padding: 10px 0 10px 46px;
+    min-height: 40px;
+    @include thirdBreakpoint {
+        font-size: 20px;
+        height: auto;
+    } 
+    &:after {
+        content: '';
+        border: 1px solid $accent-color;
+        display: block;
+        width: 50%;
+    }
+}
+.ico{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $main-color;
+    text-align: center;
+    float: left;
+    span{
+        color: #E8EDDF;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+.contact{
+    text-align: center;
+    span{
+      line-height: 40px;
+      padding-right: 10px;
+    }
+}
+
+.map{
+    height: 450px;
+      iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        }
+}
+
+.hidden{
+    display: none;
+}

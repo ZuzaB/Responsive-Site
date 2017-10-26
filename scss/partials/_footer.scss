@@ -1,0 +1,23 @@
+@import 'modules/all';
+footer{
+    background-color: $base-color;
+    color: $contrast-color;
+    padding: 6px 0;
+    p{
+      width: 50%;
+    }
+    a{
+      text-decoration: none;
+      color: $contrast-color;
+    }
+    .copy-rights{
+      float: left;
+    }
+    .author{
+      text-align: right;
+      float: right;   
+      span{
+        font-size: 1.2em;
+      }
+    }
+}

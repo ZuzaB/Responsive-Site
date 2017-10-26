@@ -1,0 +1,28 @@
+$firstBreakpoint-width: 540px;
+$secondBreakpoint-width: 600px;
+$thirdBreakpoint-width: 840px;
+$fourthBreakpoint-width: 1400px;
+
+@mixin firstBreakpoint {
+    @media (min-width: #{$firstBreakpoint-width}) {
+        @content;
+    }
+}
+
+@mixin secondBreakpoint {
+    @media (min-width: #{$secondBreakpoint-width}) {
+        @content;
+    }
+}
+
+@mixin thirdBreakpoint {
+    @media (min-width: #{$thirdBreakpoint-width}) {
+        @content;
+    }
+}
+
+@mixin fourthBreakpoint {
+    @media (min-width: #{$fourthBreakpoint-width}) {
+        @content;
+    }
+}
