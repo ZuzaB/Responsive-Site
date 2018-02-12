@@ -29,6 +29,7 @@ header{
     -webkit-box-shadow: 0 8px 6px -6px $main-color;
     -moz-box-shadow: 0 8px 6px -6px $main-color;
     box-shadow: 0 8px 6px -6px $main-color;
+    z-index: 2;
     a{
       text-decoration: none;
       text-transform: uppercase;
@@ -40,6 +41,7 @@ header{
 }
 
 nav {
+    z-index: 2;
     background-color: $contrast-color;
     &.mobile-menu{
         -webkit-box-shadow: 0 8px 6px -6px $main-color;
@@ -81,24 +83,25 @@ nav {
     font-size: 2em;
     a{
       color: $main-color;
+      img {
+         width: 25%;
+        @include firstBreakpoint{
+          width: 70%;
+        }
+      }
     }
-    // &:after{
-    //     content: '';
-    //     border: 1px solid $accent-color;
-    //     display: block;
-    //     width: 31px;
-    //     margin: 0 auto;
-    // }
 }
 
 .big-logo{
     margin: 0 auto;
-    margin-top: 25%;
+    margin-top: 15%;
     color: #060f1c;
     font-size: 5em;
-    margin-bottom: 35px;
     text-shadow: #aeae8a 1px 1px 60px;
-    &:after{
-        width: 1em;
+    img {
+      width: 70%;
+      @include firstBreakpoint{
+        width: 50%;
+      }
     }
 }
