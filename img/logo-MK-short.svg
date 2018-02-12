@@ -21,6 +21,9 @@
      id="defs2">
      <style type="text/css">
        @import url('https://fonts.googleapis.com/css?family=Tangerine:700');
+       text {
+        font-family: "Tangerine";
+       }
      </style>
     <linearGradient
        id="linearGradient2342"
